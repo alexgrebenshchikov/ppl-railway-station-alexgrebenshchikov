@@ -11,7 +11,7 @@ class eventsTest {
         station.setBusy_way(3);
         String[] ln = {"176", "Краснодар", "Воронеж", "00:10", "01:00", "21", "с_хвоста", "2"};
         schedule str = new schedule(ln);
-        arrival_trains train = new arrival_trains(str.getNumber_of_train(), str.getSrc(), str.getDest(), str.getArrival_time(), str.getDep_time(), str.getNumber_of_carriages(), str.getDirection());
+        trains train = new trains(str.getNumber_of_train(), str.getSrc(), str.getDest(), str.getArrival_time(), str.getDep_time(), str.getNumber_of_carriages(), str.getDirection());
         events et = new events();
         et.platform_way(train,station);
         Assert.assertEquals(train.getWay(), 2);
@@ -24,7 +24,7 @@ class eventsTest {
         full_station station = new full_station("Курган", 3, 24);
         String[] ln = {"176", "Краснодар", "Воронеж", "00:10", "01:00", "21", "с_хвоста", "12"};
         schedule str = new schedule(ln);
-        arrival_trains train = new arrival_trains(str.getNumber_of_train(), str.getSrc(), str.getDest(), str.getArrival_time(), str.getDep_time(), str.getNumber_of_carriages(), str.getDirection());
+        trains train = new trains(str.getNumber_of_train(), str.getSrc(), str.getDest(), str.getArrival_time(), str.getDep_time(), str.getNumber_of_carriages(), str.getDirection());
         events event = new events();
         event.change_carriages(train,station,str);
         Assert.assertEquals(train.getNumber_of_carriages(), 33);

@@ -7,7 +7,7 @@ import java.util.Random;
 
 
 public class events {
-    public void platform_way(arrival_trains train, full_station station) {
+    public void platform_way(trains train, full_station station) {
         int free_way = station.get_free_way();
         train.setWay(free_way);
         train.setPlatform(free_way);
@@ -15,11 +15,11 @@ public class events {
     }
 
 
-    public void departure(arrival_trains train, full_station station) {
+    public void departure(trains train, full_station station) {
         station.add_free_way(train.getWay());
     }
 
-    public boolean change_carriages(arrival_trains train, full_station station, schedule sch) {
+    public boolean change_carriages(trains train, full_station station, schedule sch) {
         if (sch.getChange_carriages() > station.getStationCarriages() || -(sch.getChange_carriages()) > train.getNumber_of_carriages()) {
             return false;
         } else {

@@ -3,8 +3,6 @@ import com.sun.tools.javac.Main;
 import java.io.*;
 import java.util.*;
 
-import static java.lang.Math.abs;
-
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -23,11 +21,14 @@ public class Program {
 
     public static void main(String[] args) throws IOException {
         try {
+            System.out.println("События поминутно выводятся в файл Timelist.txt");
+            System.out.println("Расписание находится в файле  schedule.txt");
+            System.out.println("Лог в файле log.0.0.txt");
             LOGGER.log(Level.INFO, "Начало main, создаем лист обьектов класса action");
             LinkedList<action> list = new LinkedList<>();
 
             LOGGER.log(Level.INFO, "Создание словаря обьектов класса trains");
-            HashMap<Integer, arrival_trains> trains = new HashMap<>();
+            HashMap<Integer, trains> trains = new HashMap<>();
 
             LOGGER.log(Level.INFO, "Создание обьекта класса station");
             full_station station = new full_station("Курган", 12, 24);
@@ -53,7 +54,7 @@ public class Program {
             }
             timeline obj = new timeline();
             int timer = 0;
-            File file = new File("Example.txt");
+            File file = new File("Timelist.txt");
             file.createNewFile();
             FileWriter writer = new FileWriter(file);
             while (list.size() > 0 || scheduleList.size() > 0) {

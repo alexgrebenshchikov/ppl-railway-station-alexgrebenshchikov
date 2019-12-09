@@ -1,5 +1,5 @@
 
-public class arrival_trains {
+public class trains {
     private int number_of_train;
     private String source;
     private String destination;
@@ -10,7 +10,7 @@ public class arrival_trains {
     private int way;
     private int platform;
 
-    public arrival_trains(int number, String src,String dest,int ar_t,int dep_t,int num,String dir) {
+    public trains(int number, String src,String dest,int ar_t,int dep_t,int num,String dir) {
         this.number_of_train = number;
         this.source = src;
         this.destination = dest;

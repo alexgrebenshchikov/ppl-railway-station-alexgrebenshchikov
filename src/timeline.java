@@ -67,7 +67,7 @@ public class timeline {
         scheduleList.remove(0);
     }
 
-    public int execution(LinkedList<action> list, full_station station, FileWriter writer, HashMap<Integer, arrival_trains> trains, int timer, Logger LOGGER) throws IOException {
+    public int execution(LinkedList<action> list, full_station station, FileWriter writer, HashMap<Integer, trains> trains, int timer, Logger LOGGER) throws IOException {
         String time;
         action act = list.get(0);
         while(timer < act.getTime()) {
@@ -80,9 +80,9 @@ public class timeline {
         time = "" + (act.getTime() / 60) / 10 + (act.getTime() / 60) % 10 + ":" + (act.getTime() % 60) / 10 + (act.getTime() % 60) % 10;
         writer.write(time + " : ");
         String msg;
-        arrival_trains train;
+        trains train;
         if (act.getType() == 0) {
-            train = new arrival_trains(str.getNumber_of_train(), str.getSrc(), str.getDest(), str.getArrival_time(), str.getDep_time(), str.getNumber_of_carriages(), str.getDirection());
+            train = new trains(str.getNumber_of_train(), str.getSrc(), str.getDest(), str.getArrival_time(), str.getDep_time(), str.getNumber_of_carriages(), str.getDirection());
             LOGGER.log(Level.INFO, "Вызов метода platform_way");
             event.platform_way(train, station);
             if (str.getArrival_time() != -1) {

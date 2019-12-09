@@ -1,80 +1,76 @@
-дек. 09, 2019 3:18:30 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Начало main, создаем лист обьектов класса action
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Создание словаря обьектов класса trains
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Создание обьекта класса station
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Чтение списка занятых грузовыми составами путей
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Занятый путь: 1
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Занятый путь: 2
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Занятый путь: 3
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Занятый путь: 5
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Чтение расписания движения поездов
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Считана строка расписания
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Считана строка расписания
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Считана строка расписания
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Считана строка расписания
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Считана строка расписания
-дек. 09, 2019 3:18:31 PM Program main
+дек. 09, 2019 4:27:40 PM Program main
 INFO: Считана строка расписания
-дек. 09, 2019 3:18:31 PM timeline new_action
-INFO: Случайная задержка отбытия на 60 минут
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода platform_way
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Добавление обьекта train в словарь
-дек. 09, 2019 3:18:31 PM timeline execution
-INFO: Вызов метода platform_way
-дек. 09, 2019 3:18:31 PM timeline execution
-INFO: Добавление обьекта train в словарь
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода change_carriages
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
+INFO: Вызов метода platform_way
+дек. 09, 2019 4:27:41 PM timeline execution
+INFO: Добавление обьекта train в словарь
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода departure
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода change_carriages
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода departure
-дек. 09, 2019 3:18:31 PM timeline new_action
-INFO: Случайная задержка прибытия на 120 минут
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода platform_way
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Добавление обьекта train в словарь
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода change_carriages
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода platform_way
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Добавление обьекта train в словарь
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода change_carriages
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода departure
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline new_action
+INFO: Случайная задержка прибытия на 60 минут
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода platform_way
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Добавление обьекта train в словарь
-дек. 09, 2019 3:18:31 PM timeline execution
-INFO: Вызов метода change_carriages
-дек. 09, 2019 3:18:31 PM timeline new_action
-INFO: Случайная задержка отбытия на 30 минут
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода platform_way
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Добавление обьекта train в словарь
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода change_carriages
-дек. 09, 2019 3:18:31 PM timeline execution
+дек. 09, 2019 4:27:41 PM timeline execution
+INFO: Вызов метода change_carriages
+дек. 09, 2019 4:27:41 PM timeline execution
 INFO: Вызов метода departure
